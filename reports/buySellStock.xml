@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<testsuites errors="0" 
+            failures="0" 
+            tests="0"> 
+ 
+  <testsuite name="buySellStock" 
+    errors="0" failures="0" hostname="" id="" package="buySellStock" skipped="0" 
+    tests="0" time="0.000" timestamp="Wed, 16 May 2018 01:59:05 GMT"> 
+   
+ 
+   
+ 
+   
+  </testsuite> 
+</testsuites> 
