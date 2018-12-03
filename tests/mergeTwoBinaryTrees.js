@@ -12,7 +12,7 @@ var root
 	}
 	else
 	{
-			root = new Treenode(t1.val+t2.val();
+			root = new Treenode(t1.val+t2.val());
 			root.left = mergeBinaryTrees(t1.left,t2.left);
 			root.right = mergeBinaryTrees(t2.right,t2.right);
 	}

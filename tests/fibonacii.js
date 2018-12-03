@@ -1,3 +1,22 @@
+var fibonacii = function(n)
+{
+	var fib = []
+	fib[0] = 0
+	fib[1] = 1
+	for(var i=0;i<n;i++)
+	{
+		fib[i+2] = fib[i] + fib[i+1]
+
+	}
+	for(var j=0;j<n;j++)
+	{
+console.log(fib[j])
+}
+
+}
+fibonacii(8)
+
+/*
 var fibonacci = function(n)
 {
 	var a = 1;
@@ -14,3 +33,8 @@ var fibonacci = function(n)
 	//return b;
 }
 console.log(fibonacci(5));
+
+
+
+
+*/
