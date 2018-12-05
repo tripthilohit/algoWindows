@@ -22,3 +22,5 @@ for(var i=0;i<jewels.length;i++)
 return count;
 }
 console.log(matchCharacters('aAAbbbb','A'));
+
+
