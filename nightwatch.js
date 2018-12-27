@@ -1,1 +1,1 @@
-require('/Users/tripthi/Desktop/algoWindows/nightwatch/bin/runner.js');
+require('/Users/tripthishetty/Desktop/algoWindows/nightwatch/bin/runner.js');
