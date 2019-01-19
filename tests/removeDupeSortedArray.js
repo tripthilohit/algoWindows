@@ -1,3 +1,4 @@
+//remove dupes from a sorted array
 //return length of the new array
 //also the new array
 var removeDupeSortedArray = function(arr)

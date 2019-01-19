@@ -1,3 +1,4 @@
+//remove dupes from an unsorted array
 //return length of the new array
 //also the new array
 var sortArray = function(arr)
