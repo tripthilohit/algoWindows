@@ -14,4 +14,4 @@ for(var i=0;i<prices.length;i++)
 }
 	console.log(profit)
 }
-maxProfit([7,2,2,1])
+maxProfit([2,4,2,5,10])

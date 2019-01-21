@@ -15,3 +15,25 @@ var reverseStringWords = function(str)
 	return rev;
 }
 console.log(reverseStringWords("hello world"));
+
+/*
+//reverse a string
+
+var reverseString = function(str)
+{
+	var reverse = []
+	j=0
+	for(var i=str.length-1;i>=0;i--)
+	{
+		reverse[j]=str[i]
+		j++
+	}
+	
+		console.log(reverse.join(''))
+	
+}
+
+
+reverseString("hello world eat and drink")
+
+*/
