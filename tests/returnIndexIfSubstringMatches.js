@@ -1,28 +1,37 @@
-var returnString = function(s1, s2)
-{
+//return the index if the substring matches
 
-for (var i=0;i<s1.length;i++)
-{
-var flag = true;
-var k = i;
-for(var j=0;j<s2.length;j++)
-{
 
-		if(s1[i]===s2[j])
-{	
-		  i++;
+var subStringIndex = function(str,sub)
+{
+	
+	var k 
+	var flag 
+	for(var i=0;i<(str.length-sub.length)+1;i++)
+	{	flag = true
+		
+		for(j=0;j<sub.length;j++)
+		{
+			if(str[i+j]!=sub[j])
+			{
+				flag=false
+				break
+			}
+			
 		}
-else 
-{
-flag = false;
-break;
+		if(flag)
+{	console.log(i)
+	
 }
 
-}
-return k;
+		
 	}
-if(!flag)
-return null;
-
+	
+	if(!flag)
+	console.log("null")
+	
 }
 
+
+
+
+subStringIndex('abcdefg','bc')

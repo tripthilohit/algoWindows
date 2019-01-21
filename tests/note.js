@@ -1,34 +1,37 @@
-//merge two list
+//return the index if the substring matches
 
-var sortArray = function(arr)
-{
-	var temp
-	for(var i=0;i<arr.length;i++)
-	{
-		for(var j=i+1;j<arr.length;j++)
-		{
-		if(arr[i]>arr[j])
-		{
-			temp = arr[j]
-			arr[j]= arr[i]
-			arr[i]= temp
-		}
-		}
 
-	}
-}
-var mergeTwoLists = function(arr1,arr2)
+var subStringIndex = function(str,sub)
 {
-	sortArray(arr1)
-	sortArray(arr2)
-	var mergedArray = []
-	mergedArray = arr1.concat(arr2)
-	sortArray(mergedArray)
-	for(var i=0;i<mergedArray.length;i++)
-	{
-		console.log(mergedArray[i])
-	}
+	
+	var k 
+	var flag 
+	for(var i=0;i<(str.length-sub.length)+1;i++)
+	{	flag = true
+		
+		for(j=0;j<sub.length;j++)
+		{
+			if(str[i+j]!=sub[j])
+			{
+				flag=false
+				break
+			}
+			
+		}
+		if(flag)
+{	console.log(i)
+	
 }
 
+		
+	}
+	
+	if(!flag)
+	console.log("null")
+	
+}
 
-mergeTwoLists([2,5,3],[7,1,4])
+
+
+
+subStringIndex('abc','bc')
