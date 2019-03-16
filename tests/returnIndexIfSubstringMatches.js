@@ -34,4 +34,13 @@ var subStringIndex = function(str,sub)
 
 
 
-subStringIndex('abcdefg','bc')
+subStringIndex('hello','ll')
+/*
+var indexSubstring = function(str,sub)
+{
+
+console.log(str.indexOf(sub))
+}
+
+
+indexSubstring('hello','lo')*/

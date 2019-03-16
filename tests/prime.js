@@ -1,26 +1,34 @@
-//driver.globals.userNames.memberURL
-
-   //var num =prompt("Enter User Value")
-
-   function isPrime(num) {
-    for ( var i = 2; i < num; i++ ) {
-        if ( num % i === 0 ) {
-            return false;
-        }
-        else return true;
-    }
-
+var prime = function(num)
+{
     
-}
-
-function display(n) {
-    var arr = [2];
-    for ( var i = 3; i < n; i+=2 ) {
-        if ( isPrime(i) ) {
-            arr.push(i);
-        }
+    var flag=true
+    for(var i=2;i<num;i++)
+    {
+        if(num%i==0)
+        {
+            flag = false
+        break
     }
-    console.log(arr); // use arr result on your own
+
+    }
+    if(flag==true)
+        return true
+    else
+        return false
+
 }
 
-display(100);
+var display = function(n)
+{
+    var primeArr = [2]
+    
+    for(var j=3;j<n;j++)
+    {
+        if(prime(j))
+            primeArr.push(j)
+
+    }
+    console.log(primeArr)
+}
+
+display(20)

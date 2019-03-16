@@ -1,6 +1,50 @@
-//2nd unique character in a text
+
+//nth unique character in a text
+//using charAt see link https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/
+
+var nthUniqueCharacterText = function(n,str)
+{
+	var str1 = str
+	var newStr = []
+	var count,k =0 
+	var c=0
+	for(var i=0;i<str.length;i++)
+	{		
+		var count =0
+		for(var j=0;j<str1.length;j++)
+		{
+			if(str[i]==str1[j])
+			{
+				count++	
+			}
+			
+		}
+		newStr[k]=count
+				k++
+	}
+	console.log(newStr)
+	for(var m=0;m<newStr.length;m++)
+	{	
+		
+		if(newStr[m]==1)
+			c++
+		if(c==n)
+			break
+	}
+	console.log("The unique character is "+str[m])
+		
+}
 
 
+
+nthUniqueCharacterText(3,"abnknbadfghkfgkuk")
+
+
+
+
+
+//following does not work
+/*
 var nthUniqueCharacter = function(str,n)
 {
 
@@ -29,4 +73,6 @@ for(var i=0;i<str.length;i++)
 
 
 
-nthUniqueCharacter('qqwerjjektk',2)
+nthUniqueCharacter('abnknbadfghkfgk',2)
+
+*/

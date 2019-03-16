@@ -37,3 +37,32 @@ var reverseString = function(str)
 reverseString("hello world eat and drink")
 
 */
+/* worked
+var reverseWordInSentence = function(sentence)
+{
+	var splitStr = sentence.split(" ")
+	var revStr = ""
+	for(var i=0;i<splitStr.length;i++)
+	{
+		revStr+=reversee(splitStr[i])+" "
+
+	}
+
+
+
+	return revStr	
+	
+}
+
+var reversee = function(str)
+{
+	var rev = "";
+	for(var i=str.length-1;i>=0;i--)
+	{
+	rev+=str[i];
+	}
+	return rev;
+}
+
+console.log(reverseWordInSentence("How are you"))
+*/
