@@ -35,6 +35,35 @@ var subStringIndex = function(str,sub)
 
 
 subStringIndex('hello','ll')
+/* 
+var returnSubstringIndex = function(str,sub)
+{
+
+	var flag=false
+	var j=0
+	for(i=0;i<(str.length-sub.length)+1;i++)
+	{
+		
+		if(str[i]!=sub[j])
+			flag=false
+		else
+		{
+			flag=true
+			j++
+			
+		}
+	}
+	
+	if(flag==true)
+		console.log("contains")
+	else
+		console.log("does not contain")
+	
+	
+}
+
+returnSubstringIndex("hellog","lh")
+*/
 /*
 var indexSubstring = function(str,sub)
 {
