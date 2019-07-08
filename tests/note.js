@@ -1,14 +1,24 @@
-//find nth largest number
+//return the index if the substring matches
 
-function largestNumber(arr)
+function returnIndexSubString(string,sub)
 {
-	var big = arr[0]
-	for(var i=1;i<arr.length;i++)
+	var flag
+
+for(var i=0;i<(string.length-sub.length)+1;i++)
+{
+	flag = true
+	for(var j=0;j<sub.length;j++)
 	{
-		if(arr[i]>big)
-			big = arr[i]
+		if(string[i+j]!=sub[j])
+		{
+			flag=false
+			break
+		}
+
 	}
-	console.log("Largest is "+big)
+	if(flag)
+		console.log(i)
+}
 }
 
-largestNumber([2,4,3,4,5,3])
+returnIndexSubString("hello","ll")

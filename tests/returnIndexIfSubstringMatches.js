@@ -26,8 +26,6 @@ var subStringIndex = function(str,sub)
 		
 	}
 	
-	if(!flag)
-	console.log("null")
 	
 }
 
